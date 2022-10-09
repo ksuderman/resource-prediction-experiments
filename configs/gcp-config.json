@@ -1,0 +1,11 @@
+{
+  "config_cloudlaunch": {
+    "vmType": "n1-standard-8",
+    "rootStorageType": "volume",
+    "rootStorageSize": 42,
+    "keyPair": null
+  },
+  "config_cloudman2": {
+    "clusterPassword": "gvl_letmein"
+  }
+}

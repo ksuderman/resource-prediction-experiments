@@ -1,0 +1,48 @@
+image:
+  repository: quay.io/galaxyproject/galaxy-min
+  tag: 22.05
+postgresql:
+  enabled: true
+  deploy: false
+  galaxyDatabasePassword: galaxydbpassword
+  persistence:
+    storageClass: nfs
+ingress:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  path: "/galaxy"
+  hosts:
+    - host: ~
+      paths:
+        - path: "/galaxy"
+persistence:
+  accessMode: ReadWriteMany
+  storageClass: nfs
+  size: 300Gi
+initJob:
+  downloadToolConfs:
+    enabled: true
+webHandlers:
+  startupDelay: 10
+jobHandlers:
+  startupDelay: 5
+workflowHandlers:
+  startupDelay: 0
+configs:
+  galaxy.yml:
+    galaxy:
+      job_metrics_config_file: job_metrics_conf.yml
+      admin_users: afgane@gmail.com,suderman@jhu.edu, admin@galaxyproject.org
+      master_api_key: galaxypassword
+  job_metrics_conf.yml:
+    - type: core
+    - type: cgroup
+    - type: cpuinfo
+    - type: meminfo
+    - type: uname
+  job_conf.yml:
+    execution:
+      environment:
+        tpv_dispatcher:
+          tpv_config_files:
+            - lib/galaxy/jobs/rules/tpv_rules_local.yml

@@ -1,0 +1,9 @@
+- output_history_base_name: chm13
+  runs:
+  - history_name: 10x
+    inputs:
+    - name: FASTQ Dataset - forward
+      dataset_id: human-10x-f
+    - name: FASTQ Dataset - reverse
+      dataset_id: human-10x-r
+  workflow_id: DNA Mapper chm13

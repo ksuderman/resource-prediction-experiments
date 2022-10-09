@@ -1,0 +1,6 @@
+ingress:
+  path: "/galaxy"
+  hosts:
+    - host: null
+      paths:
+        - path: "/galaxy"

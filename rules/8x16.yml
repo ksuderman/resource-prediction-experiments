@@ -1,0 +1,29 @@
+jobs:
+  rules:
+    tpv_rules_local.yml:
+      global:
+        default_inherits: default
+      tools:
+        default:
+          cores: 8
+          mem: 16
+          params:
+            local_slots: "8"
+          scheduling:
+            reject:
+              - local
+              - offline
+      destinations:
+        k8s:
+          params:
+            requests_cpu: "8"
+            requests_memory: "16Gi"
+            limits_cpu: "8"
+            limits_memory: "16Gi"
+          scheduling:
+            accept:
+              - docker
+        local:
+          scheduling:
+            require:
+              - local

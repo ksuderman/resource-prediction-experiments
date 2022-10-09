@@ -1,0 +1,9 @@
+- output_history_base_name: {{genome}}
+  runs:
+  - history_name: {{size}}
+    inputs:
+    - name: FASTQ Dataset - forward
+      dataset_id: human-{{size}}-f
+    - name: FASTQ Dataset - reverse
+      dataset_id: human-{{size}}-r
+  workflow_id: DNA Mapper {{genome}}

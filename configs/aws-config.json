@@ -1,0 +1,11 @@
+{
+  "config_cloudlaunch": {
+    "vmType": "m6a.2xlarge",
+    "rootStorageType": "volume",
+    "rootStorageSize": 42,
+    "keyPair": "aws-cloudcost-benchmark"
+  },
+  "config_cloudman2": {
+    "clusterPassword": "gvl_letmein"
+  }
+}
