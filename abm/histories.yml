@@ -1,0 +1,5 @@
+1kG: https://galaxy-benchmark-data.s3.amazonaws.com/Galaxy-History-1kG-30x.tar.gz
+dna2: https://galaxy-benchmark-data.s3.amazonaws.com/Galaxy-History-DNA-Paired-Benchmarking.tar.gz
+mouse: https://js2.jetstream-cloud.org:8001/swift/v1/testing-data/SRR1552454.fastqsanger.gz
+human-dna-1x: https://usegalaxy.org/api/histories/69730e2c3e438f3d/exports/8cc8cbc537e05343
+

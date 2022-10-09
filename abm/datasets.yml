@@ -1,0 +1,9 @@
+dna-1G: https://js2.jetstream-cloud.org:8001/swift/v1/testing-data/ERR9856796.fastq.gz
+dna-6G: https://galaxy-benchmark-data.s3.amazonaws.com/ERR9856694.fastq.gz
+dna-12G: https://galaxy-benchmark-data.s3.amazonaws.com/ERR9856489.fastq.gz
+human-dna-1x-f: https://benchmarking-inputs.s3.amazonaws.com/SRR12898325/SRR12898325-R1-downsampled-05GB.fq.gz
+human-dna-1x-r: https://benchmarking-inputs.s3.amazonaws.com/SRR12898325/SRR12898325-R2-downsampled-05GB.fq.gz
+human-dna-10x-f: https://benchmarking-inputs.s3.amazonaws.com/SRR12898325/SRR12898325-R1-downsampled-5GB.fq.gz
+human-dna-10x-r: https://benchmarking-inputs.s3.amazonaws.com/SRR12898325/SRR12898325-R2-downsampled-5GB.fq.gz
+human-dna-30x-f: https://benchmarking-inputs.s3.amazonaws.com/SRR12898325/NextSeq_LAB02_Son3_REP01-R1.fq.gz
+human-dna-30x-r: https://benchmarking-inputs.s3.amazonaws.com/SRR12898325/NextSeq_LAB02_Son3_REP01-R2.fq.gz

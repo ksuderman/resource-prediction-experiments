@@ -1,0 +1,5 @@
+dna: https://galaxy-benchmark-data.s3.amazonaws.com/workflows/dna-cloud-costs.ga
+rna: https://galaxy-benchmark-data.s3.amazonaws.com/workflows/rna-covid-va.ga
+mm10: https://galaxy-benchmark-data.s3.amazonaws.com/workflows/wf-same-ref-mm10.ga
+hg38: https://benchmarking-inputs.s3.amazonaws.com/benchmarking-dna-mappers-pe-hg38.ga
+chm13: https://benchmarking-inputs.s3.amazonaws.com/benchmarking-dna-mappers-pe-chm13.ga
