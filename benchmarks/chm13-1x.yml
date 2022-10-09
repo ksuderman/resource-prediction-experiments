@@ -2,8 +2,8 @@
   runs:
   - history_name: 1x
     inputs:
-    - name: FASTQ Dataset - forward
+    - name: FASTQ Dataset forward
       dataset_id: human-1x-f
-    - name: FASTQ Dataset - reverse
+    - name: FASTQ Dataset reverse
       dataset_id: human-1x-r
   workflow_id: DNA Mapper chm13
