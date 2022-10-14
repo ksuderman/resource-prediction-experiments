@@ -7,6 +7,9 @@ postgresql:
   galaxyDatabasePassword: galaxydbpassword
   persistence:
     storageClass: nfs
+cvmfs:
+  deploy: false
+  enabled: false
 ingress:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
