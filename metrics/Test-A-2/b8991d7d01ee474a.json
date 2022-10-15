@@ -1,0 +1,243 @@
+{
+    "run": "1",
+    "cloud": "m6a",
+    "job_conf": "8x32",
+    "workflow_id": "d75c31caf4700300",
+    "history_id": "19aae1f7ea272df9",
+    "inputs": "human-10x-f human-10x-r",
+    "metrics": {
+        "model_class": "Job",
+        "id": "b8991d7d01ee474a",
+        "state": "error",
+        "exit_code": 1,
+        "update_time": "2022-10-12T06:30:42.082541",
+        "create_time": "2022-10-12T06:26:54.420933",
+        "galaxy_version": "22.05",
+        "command_version": "/usr/local/bin/hisat2-align-s version 2.1.0\n64-bit\nBuilt on login-node03\nWed Jun  7 15:53:42 EDT 2017\nCompiler: gcc version 4.8.2 (GCC) \nOptions: -O3 -m64 -msse2 -funroll-loops -g3 -DPOPCNT_CAPABILITY\nSizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.1.0+galaxy7",
+        "history_id": "19aae1f7ea272df9",
+        "external_id": "gxy-galaxy-6w5rl",
+        "command_line": "ln -f -s '/galaxy/server/database/objects/7/5/c/dataset_75c2fd0d-337e-4b0d-a4be-513142e7c9d3.dat' input_f.fastq.gz &&  ln -f -s '/galaxy/server/database/objects/c/d/d/dataset_cdd58182-ac1d-401d-ac5f-f7382e13f5fe.dat' input_r.fastq.gz &&     hisat2  -p ${GALAXY_SLOTS:-1}  -x '/cvmfs/data.galaxyproject.org/managed/hisat2_index/hg38/hg38'    -1 'input_f.fastq.gz' -2 'input_r.fastq.gz'                                | samtools sort -l 0 -T \"${TMPDIR:-.}\" -O bam | samtools view -O bam -@ ${GALAXY_SLOTS:-1} -o '/galaxy/server/database/objects/d/d/d/dataset_ddd37ba2-a388-4269-819c-cce853ae6214.dat'",
+        "traceback": null,
+        "params": {
+            "adv": "{\"alignment_options\": {\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}, \"input_options\": {\"__current_case__\": 0, \"input_options_selector\": \"defaults\"}, \"other_options\": {\"__current_case__\": 0, \"other_options_selector\": \"defaults\"}, \"output_options\": {\"__current_case__\": 0, \"output_options_selector\": \"defaults\"}, \"reporting_options\": {\"__current_case__\": 0, \"reporting_options_selector\": \"defaults\"}, \"sam_options\": {\"__current_case__\": 0, \"sam_options_selector\": \"defaults\"}, \"scoring_options\": {\"__current_case__\": 0, \"scoring_options_selector\": \"defaults\"}, \"spliced_options\": {\"__current_case__\": 0, \"spliced_options_selector\": \"defaults\"}}",
+            "library": "{\"__current_case__\": 1, \"input_1\": {\"values\": [{\"id\": 4, \"src\": \"hda\"}]}, \"input_2\": {\"values\": [{\"id\": 7, \"src\": \"hda\"}]}, \"paired_options\": {\"__current_case__\": 0, \"paired_options_selector\": \"defaults\"}, \"rna_strandness\": \"\", \"type\": \"paired\"}",
+            "reference_genome": "{\"__current_case__\": 0, \"index\": \"hg38\", \"source\": \"indexed\"}",
+            "sum": "{\"new_summary\": \"false\", \"summary_file\": \"false\"}",
+            "__workflow_invocation_uuid__": "\"dce7c94c49f611edae3ff667d0fbdeba\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "input_1": {
+                "id": "703599fe08556e20",
+                "src": "hda",
+                "uuid": "75c2fd0d-337e-4b0d-a4be-513142e7c9d3"
+            },
+            "input_2": {
+                "id": "9272b1f1e60baf7d",
+                "src": "hda",
+                "uuid": "cdd58182-ac1d-401d-ac5f-f7382e13f5fe"
+            }
+        },
+        "outputs": {
+            "output_alignments": {
+                "id": "13e4e5a298f9033c",
+                "src": "hda",
+                "uuid": "ddd37ba2-a388-4269-819c-cce853ae6214"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "Segmentation fault (core dumped)\n(ERR): hisat2-align exited with value 139\nsamtools sort: failed to read header from \"-\"\n[main_samview] fail to read the header from \"-\".\n",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "Segmentation fault (core dumped)\n(ERR): hisat2-align exited with value 139\nsamtools sort: failed to read header from \"-\"\n[main_samview] fail to read the header from \"-\".\n",
+        "stdout": "",
+        "job_messages": [
+            {
+                "code_desc": "",
+                "desc": "Fatal error: Exit code 1 ()",
+                "error_level": 3,
+                "exit_code": 1,
+                "type": "exit_code"
+            },
+            {
+                "code_desc": null,
+                "desc": "Fatal error: Matched on hisat2-align exited with value 1",
+                "error_level": 3,
+                "match": "hisat2-align exited with value 1",
+                "stream": "stderr",
+                "type": "regex"
+            }
+        ],
+        "dependencies": [],
+        "user_email": "suderman@jhu.edu",
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux gxy-galaxy-6w5rl-ttfh4 5.4.0-1045-aws #47-Ubuntu SMP Tue Apr 13 07:02:25 UTC 2021 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux gxy-galaxy-6w5rl-ttfh4 5.4.0-1045-aws #47-Ubuntu SMP Tue Apr 13 07:02:25 UTC 2021 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "8",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "8.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "34359",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "34359.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2022-10-12 06:27:22",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1665556042.0000000"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2022-10-12 06:30:22",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1665556222.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "3 minutes",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "180.0000000"
+            },
+            {
+                "title": "CPU Time",
+                "value": "3.155467569 seconds",
+                "plugin": "cgroup",
+                "name": "cpuacct.usage",
+                "raw_value": "3155467569.0000000"
+            },
+            {
+                "title": "Failed to allocate memory count",
+                "value": 0.0,
+                "plugin": "cgroup",
+                "name": "memory.failcnt",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Memory limit on cgroup (MEM)",
+                "value": "32.0 GB",
+                "plugin": "cgroup",
+                "name": "memory.limit_in_bytes",
+                "raw_value": "34359738368.0000000"
+            },
+            {
+                "title": "Max memory usage (MEM)",
+                "value": "6.8 GB",
+                "plugin": "cgroup",
+                "name": "memory.max_usage_in_bytes",
+                "raw_value": "7303872512.0000000"
+            },
+            {
+                "title": "OOM Control enabled",
+                "value": "Yes",
+                "plugin": "cgroup",
+                "name": "memory.oom_control.oom_kill_disable",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Was OOM Killer active?",
+                "value": "No",
+                "plugin": "cgroup",
+                "name": "memory.oom_control.under_oom",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Memory softlimit on cgroup",
+                "value": "8.0 EB",
+                "plugin": "cgroup",
+                "name": "memory.soft_limit_in_bytes",
+                "raw_value": "9223372036854771712.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "48",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "48.0000000"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "180.4 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "193736796.0000000"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            }
+        ]
+    },
+    "status": {
+        "model_class": "Job",
+        "id": "b8991d7d01ee474a",
+        "state": "error",
+        "exit_code": 1,
+        "update_time": "2022-10-12T06:30:42.082541",
+        "create_time": "2022-10-12T06:26:54.420933",
+        "galaxy_version": "22.05",
+        "command_version": "/usr/local/bin/hisat2-align-s version 2.1.0\n64-bit\nBuilt on login-node03\nWed Jun  7 15:53:42 EDT 2017\nCompiler: gcc version 4.8.2 (GCC) \nOptions: -O3 -m64 -msse2 -funroll-loops -g3 -DPOPCNT_CAPABILITY\nSizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.1.0+galaxy7",
+        "history_id": "19aae1f7ea272df9",
+        "external_id": "gxy-galaxy-6w5rl",
+        "command_line": "ln -f -s '/galaxy/server/database/objects/7/5/c/dataset_75c2fd0d-337e-4b0d-a4be-513142e7c9d3.dat' input_f.fastq.gz &&  ln -f -s '/galaxy/server/database/objects/c/d/d/dataset_cdd58182-ac1d-401d-ac5f-f7382e13f5fe.dat' input_r.fastq.gz &&     hisat2  -p ${GALAXY_SLOTS:-1}  -x '/cvmfs/data.galaxyproject.org/managed/hisat2_index/hg38/hg38'    -1 'input_f.fastq.gz' -2 'input_r.fastq.gz'                                | samtools sort -l 0 -T \"${TMPDIR:-.}\" -O bam | samtools view -O bam -@ ${GALAXY_SLOTS:-1} -o '/galaxy/server/database/objects/d/d/d/dataset_ddd37ba2-a388-4269-819c-cce853ae6214.dat'",
+        "traceback": null,
+        "params": {
+            "adv": "{\"alignment_options\": {\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}, \"input_options\": {\"__current_case__\": 0, \"input_options_selector\": \"defaults\"}, \"other_options\": {\"__current_case__\": 0, \"other_options_selector\": \"defaults\"}, \"output_options\": {\"__current_case__\": 0, \"output_options_selector\": \"defaults\"}, \"reporting_options\": {\"__current_case__\": 0, \"reporting_options_selector\": \"defaults\"}, \"sam_options\": {\"__current_case__\": 0, \"sam_options_selector\": \"defaults\"}, \"scoring_options\": {\"__current_case__\": 0, \"scoring_options_selector\": \"defaults\"}, \"spliced_options\": {\"__current_case__\": 0, \"spliced_options_selector\": \"defaults\"}}",
+            "library": "{\"__current_case__\": 1, \"input_1\": {\"values\": [{\"id\": 4, \"src\": \"hda\"}]}, \"input_2\": {\"values\": [{\"id\": 7, \"src\": \"hda\"}]}, \"paired_options\": {\"__current_case__\": 0, \"paired_options_selector\": \"defaults\"}, \"rna_strandness\": \"\", \"type\": \"paired\"}",
+            "reference_genome": "{\"__current_case__\": 0, \"index\": \"hg38\", \"source\": \"indexed\"}",
+            "sum": "{\"new_summary\": \"false\", \"summary_file\": \"false\"}",
+            "__workflow_invocation_uuid__": "\"dce7c94c49f611edae3ff667d0fbdeba\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "input_1": {
+                "id": "703599fe08556e20",
+                "src": "hda",
+                "uuid": "75c2fd0d-337e-4b0d-a4be-513142e7c9d3"
+            },
+            "input_2": {
+                "id": "9272b1f1e60baf7d",
+                "src": "hda",
+                "uuid": "cdd58182-ac1d-401d-ac5f-f7382e13f5fe"
+            }
+        },
+        "outputs": {
+            "output_alignments": {
+                "id": "13e4e5a298f9033c",
+                "src": "hda",
+                "uuid": "ddd37ba2-a388-4269-819c-cce853ae6214"
+            }
+        },
+        "output_collections": {}
+    },
+    "server": "http://18.208.57.3/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5623417156,
+        5917669619
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "run": "1",
+    "cloud": "m6i",
+    "job_conf": "4x16",
+    "workflow_id": "d033fee66ec0bb3f",
+    "history_id": "8e6dbe52bad0988c",
+    "inputs": "human-1x-f human-1x-r",
+    "metrics": {
+        "model_class": "Job",
+        "id": "d2935cc970ad106b",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2022-10-15T19:50:40.428350",
+        "create_time": "2022-10-15T19:43:26.623427",
+        "galaxy_version": "22.05",
+        "command_version": "/usr/local/bin/hisat2-align-s version 2.1.0\n64-bit\nBuilt on login-node03\nWed Jun  7 15:53:42 EDT 2017\nCompiler: gcc version 4.8.2 (GCC) \nOptions: -O3 -m64 -msse2 -funroll-loops -g3 -DPOPCNT_CAPABILITY\nSizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.1.0+galaxy7",
+        "history_id": "8e6dbe52bad0988c",
+        "params": {
+            "adv": "{\"alignment_options\": {\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}, \"input_options\": {\"__current_case__\": 0, \"input_options_selector\": \"defaults\"}, \"other_options\": {\"__current_case__\": 0, \"other_options_selector\": \"defaults\"}, \"output_options\": {\"__current_case__\": 0, \"output_options_selector\": \"defaults\"}, \"reporting_options\": {\"__current_case__\": 0, \"reporting_options_selector\": \"defaults\"}, \"sam_options\": {\"__current_case__\": 0, \"sam_options_selector\": \"defaults\"}, \"scoring_options\": {\"__current_case__\": 0, \"scoring_options_selector\": \"defaults\"}, \"spliced_options\": {\"__current_case__\": 0, \"spliced_options_selector\": \"defaults\"}}",
+            "library": "{\"__current_case__\": 1, \"input_1\": {\"values\": [{\"id\": 2, \"src\": \"hda\"}]}, \"input_2\": {\"values\": [{\"id\": 1, \"src\": \"hda\"}]}, \"paired_options\": {\"__current_case__\": 0, \"paired_options_selector\": \"defaults\"}, \"rna_strandness\": \"\", \"type\": \"paired\"}",
+            "reference_genome": "{\"__current_case__\": 0, \"index\": \"hg38\", \"source\": \"indexed\"}",
+            "sum": "{\"new_summary\": \"false\", \"summary_file\": \"false\"}",
+            "__workflow_invocation_uuid__": "\"a25f8bac4cc111edbb34f6290b5a0b53\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "input_1": {
+                "id": "4b221d862a2cef7b",
+                "src": "hda",
+                "uuid": "abef60cc-f81d-4e64-85e5-306d6e34aaf7"
+            },
+            "input_2": {
+                "id": "294426b45dc1e547",
+                "src": "hda",
+                "uuid": "83eb9ece-f927-47b8-b24b-40394f8a3cb2"
+            }
+        },
+        "outputs": {
+            "output_alignments": {
+                "id": "d2935cc970ad106b",
+                "src": "hda",
+                "uuid": "26ba45ac-60c6-4444-9c86-767dbeffa3f2"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "6407453 reads; of these:\n  6407453 (100.00%) were paired; of these:\n    1209618 (18.88%) aligned concordantly 0 times\n    4996734 (77.98%) aligned concordantly exactly 1 time\n    201101 (3.14%) aligned concordantly >1 times\n    ----\n    1209618 pairs aligned concordantly 0 times; of these:\n      29194 (2.41%) aligned discordantly 1 time\n    ----\n    1180424 pairs aligned 0 times concordantly or discordantly; of these:\n      2360848 mates make up the pairs; of these:\n        1697528 (71.90%) aligned 0 times\n        588742 (24.94%) aligned exactly 1 time\n        74578 (3.16%) aligned >1 times\n86.75% overall alignment rate\n[bam_sort_core] merging from 6 files and 1 in-memory blocks...\n",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "6407453 reads; of these:\n  6407453 (100.00%) were paired; of these:\n    1209618 (18.88%) aligned concordantly 0 times\n    4996734 (77.98%) aligned concordantly exactly 1 time\n    201101 (3.14%) aligned concordantly >1 times\n    ----\n    1209618 pairs aligned concordantly 0 times; of these:\n      29194 (2.41%) aligned discordantly 1 time\n    ----\n    1180424 pairs aligned 0 times concordantly or discordantly; of these:\n      2360848 mates make up the pairs; of these:\n        1697528 (71.90%) aligned 0 times\n        588742 (24.94%) aligned exactly 1 time\n        74578 (3.16%) aligned >1 times\n86.75% overall alignment rate\n[bam_sort_core] merging from 6 files and 1 in-memory blocks...\n",
+        "stdout": "",
+        "job_messages": [],
+        "dependencies": []
+    },
+    "status": {
+        "model_class": "Job",
+        "id": "d2935cc970ad106b",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2022-10-15T19:50:40.428350",
+        "create_time": "2022-10-15T19:43:26.623427",
+        "galaxy_version": "22.05",
+        "command_version": "/usr/local/bin/hisat2-align-s version 2.1.0\n64-bit\nBuilt on login-node03\nWed Jun  7 15:53:42 EDT 2017\nCompiler: gcc version 4.8.2 (GCC) \nOptions: -O3 -m64 -msse2 -funroll-loops -g3 -DPOPCNT_CAPABILITY\nSizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.1.0+galaxy7",
+        "history_id": "8e6dbe52bad0988c",
+        "params": {
+            "adv": "{\"alignment_options\": {\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}, \"input_options\": {\"__current_case__\": 0, \"input_options_selector\": \"defaults\"}, \"other_options\": {\"__current_case__\": 0, \"other_options_selector\": \"defaults\"}, \"output_options\": {\"__current_case__\": 0, \"output_options_selector\": \"defaults\"}, \"reporting_options\": {\"__current_case__\": 0, \"reporting_options_selector\": \"defaults\"}, \"sam_options\": {\"__current_case__\": 0, \"sam_options_selector\": \"defaults\"}, \"scoring_options\": {\"__current_case__\": 0, \"scoring_options_selector\": \"defaults\"}, \"spliced_options\": {\"__current_case__\": 0, \"spliced_options_selector\": \"defaults\"}}",
+            "library": "{\"__current_case__\": 1, \"input_1\": {\"values\": [{\"id\": 2, \"src\": \"hda\"}]}, \"input_2\": {\"values\": [{\"id\": 1, \"src\": \"hda\"}]}, \"paired_options\": {\"__current_case__\": 0, \"paired_options_selector\": \"defaults\"}, \"rna_strandness\": \"\", \"type\": \"paired\"}",
+            "reference_genome": "{\"__current_case__\": 0, \"index\": \"hg38\", \"source\": \"indexed\"}",
+            "sum": "{\"new_summary\": \"false\", \"summary_file\": \"false\"}",
+            "__workflow_invocation_uuid__": "\"a25f8bac4cc111edbb34f6290b5a0b53\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "input_1": {
+                "id": "4b221d862a2cef7b",
+                "src": "hda",
+                "uuid": "abef60cc-f81d-4e64-85e5-306d6e34aaf7"
+            },
+            "input_2": {
+                "id": "294426b45dc1e547",
+                "src": "hda",
+                "uuid": "83eb9ece-f927-47b8-b24b-40394f8a3cb2"
+            }
+        },
+        "outputs": {
+            "output_alignments": {
+                "id": "d2935cc970ad106b",
+                "src": "hda",
+                "uuid": "26ba45ac-60c6-4444-9c86-767dbeffa3f2"
+            }
+        },
+        "output_collections": {}
+    },
+    "server": "http://34.206.161.49/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        558003467,
+        591264254
+    ]
+}

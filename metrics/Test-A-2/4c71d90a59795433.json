@@ -1,0 +1,118 @@
+{
+    "run": "1",
+    "cloud": "e2",
+    "job_conf": "8x32",
+    "workflow_id": "68ff87207235291c",
+    "history_id": "418e02b1a76239bc",
+    "inputs": "human-10x-f human-10x-r",
+    "metrics": {
+        "model_class": "Job",
+        "id": "4c71d90a59795433",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2022-10-12T07:37:48.207765",
+        "create_time": "2022-10-12T06:24:20.207140",
+        "galaxy_version": "22.05",
+        "command_version": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.17+galaxy4",
+        "history_id": "418e02b1a76239bc",
+        "external_id": "gxy-galaxy-4rk5l",
+        "command_line": "ln -f -s '/cvmfs/data.galaxyproject.org/byhand/hg38/seq/hg38.fa' reference.fa && minimap2 -x sr           -t ${GALAXY_SLOTS:-4} reference.fa '/galaxy/server/database/objects/f/8/8/dataset_f8847f5d-110c-4ce2-9901-09a3c6ea7b64.dat' '/galaxy/server/database/objects/9/f/1/dataset_9f16b09c-37e0-4aae-9a7e-c3c1bb50d221.dat' -a | samtools sort -@${GALAXY_SLOTS:-2} -T \"${TMPDIR:-.}\" -O BAM -o '/galaxy/server/database/objects/4/e/4/dataset_4e4d28b3-2342-4b6b-90ec-d5e0d8c95738.dat'",
+        "traceback": null,
+        "params": {
+            "alignment_options": "{\"A\": null, \"B\": null, \"E\": null, \"E2\": null, \"O\": null, \"O2\": null, \"no_end_flt\": \"true\", \"s\": null, \"splicing\": {\"__current_case__\": 0, \"splice_mode\": \"preset\"}, \"z\": null, \"z2\": null}",
+            "fastq_input": "{\"__current_case__\": 1, \"analysis_type_selector\": \"sr\", \"fastq_input1\": {\"values\": [{\"id\": 7, \"src\": \"hda\"}]}, \"fastq_input2\": {\"values\": [{\"id\": 3, \"src\": \"hda\"}]}, \"fastq_input_selector\": \"paired\"}",
+            "indexing_options": "{\"H\": \"false\", \"I\": null, \"k\": null, \"w\": null}",
+            "io_options": "{\"K\": null, \"L\": \"false\", \"Q\": \"false\", \"Y\": \"false\", \"c\": \"false\", \"cs\": null, \"eqx\": \"false\", \"output_format\": \"BAM\"}",
+            "mapping_options": "{\"F\": null, \"N\": null, \"X\": \"false\", \"f\": null, \"g\": null, \"m\": null, \"max_chain_iter\": null, \"max_chain_skip\": null, \"min_occ_floor\": null, \"n\": null, \"p\": null, \"r\": null}",
+            "reference_source": "{\"__current_case__\": 0, \"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\"}",
+            "__workflow_invocation_uuid__": "\"80dfc58249f611edafbd965e1750ad8b\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "fastq_input2": {
+                "id": "4e7428c41a844815",
+                "src": "hda",
+                "uuid": "9f16b09c-37e0-4aae-9a7e-c3c1bb50d221"
+            },
+            "fastq_input1": {
+                "id": "365a08d3c0ff57b8",
+                "src": "hda",
+                "uuid": "f8847f5d-110c-4ce2-9901-09a3c6ea7b64"
+            }
+        },
+        "outputs": {
+            "alignment_output": {
+                "id": "4c71d90a59795433",
+                "src": "hda",
+                "uuid": "4e4d28b3-2342-4b6b-90ec-d5e0d8c95738"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "admin@galaxyproject.org",
+        "job_metrics": []
+    },
+    "status": {
+        "model_class": "Job",
+        "id": "4c71d90a59795433",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2022-10-12T07:37:48.207765",
+        "create_time": "2022-10-12T06:24:20.207140",
+        "galaxy_version": "22.05",
+        "command_version": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.17+galaxy4",
+        "history_id": "418e02b1a76239bc",
+        "external_id": "gxy-galaxy-4rk5l",
+        "command_line": "ln -f -s '/cvmfs/data.galaxyproject.org/byhand/hg38/seq/hg38.fa' reference.fa && minimap2 -x sr           -t ${GALAXY_SLOTS:-4} reference.fa '/galaxy/server/database/objects/f/8/8/dataset_f8847f5d-110c-4ce2-9901-09a3c6ea7b64.dat' '/galaxy/server/database/objects/9/f/1/dataset_9f16b09c-37e0-4aae-9a7e-c3c1bb50d221.dat' -a | samtools sort -@${GALAXY_SLOTS:-2} -T \"${TMPDIR:-.}\" -O BAM -o '/galaxy/server/database/objects/4/e/4/dataset_4e4d28b3-2342-4b6b-90ec-d5e0d8c95738.dat'",
+        "traceback": null,
+        "params": {
+            "alignment_options": "{\"A\": null, \"B\": null, \"E\": null, \"E2\": null, \"O\": null, \"O2\": null, \"no_end_flt\": \"true\", \"s\": null, \"splicing\": {\"__current_case__\": 0, \"splice_mode\": \"preset\"}, \"z\": null, \"z2\": null}",
+            "fastq_input": "{\"__current_case__\": 1, \"analysis_type_selector\": \"sr\", \"fastq_input1\": {\"values\": [{\"id\": 7, \"src\": \"hda\"}]}, \"fastq_input2\": {\"values\": [{\"id\": 3, \"src\": \"hda\"}]}, \"fastq_input_selector\": \"paired\"}",
+            "indexing_options": "{\"H\": \"false\", \"I\": null, \"k\": null, \"w\": null}",
+            "io_options": "{\"K\": null, \"L\": \"false\", \"Q\": \"false\", \"Y\": \"false\", \"c\": \"false\", \"cs\": null, \"eqx\": \"false\", \"output_format\": \"BAM\"}",
+            "mapping_options": "{\"F\": null, \"N\": null, \"X\": \"false\", \"f\": null, \"g\": null, \"m\": null, \"max_chain_iter\": null, \"max_chain_skip\": null, \"min_occ_floor\": null, \"n\": null, \"p\": null, \"r\": null}",
+            "reference_source": "{\"__current_case__\": 0, \"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\"}",
+            "__workflow_invocation_uuid__": "\"80dfc58249f611edafbd965e1750ad8b\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "fastq_input2": {
+                "id": "4e7428c41a844815",
+                "src": "hda",
+                "uuid": "9f16b09c-37e0-4aae-9a7e-c3c1bb50d221"
+            },
+            "fastq_input1": {
+                "id": "365a08d3c0ff57b8",
+                "src": "hda",
+                "uuid": "f8847f5d-110c-4ce2-9901-09a3c6ea7b64"
+            }
+        },
+        "outputs": {
+            "alignment_output": {
+                "id": "4c71d90a59795433",
+                "src": "hda",
+                "uuid": "4e4d28b3-2342-4b6b-90ec-d5e0d8c95738"
+            }
+        },
+        "output_collections": {}
+    },
+    "server": "http://35.196.51.167/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5623417156,
+        5917669619
+    ]
+}
