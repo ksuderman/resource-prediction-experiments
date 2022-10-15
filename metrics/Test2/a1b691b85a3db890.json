@@ -1,0 +1,110 @@
+{
+    "run": "1",
+    "cloud": "r6i",
+    "job_conf": "4x16",
+    "workflow_id": "cb8be51cbf500f46",
+    "history_id": "cfc21a260c388dca",
+    "inputs": "human-1x-f human-1x-r",
+    "metrics": {
+        "model_class": "Job",
+        "id": "a1b691b85a3db890",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2022-10-15T20:06:31.036306",
+        "create_time": "2022-10-15T19:43:26.564745",
+        "galaxy_version": "22.05",
+        "command_version": "/usr/local/bin/bowtie2-align-s version 2.4.2\n64-bit\nBuilt on default-bf91a638-95fa-4b77-97c5-abccd9855c3e\nMon Nov  2 17:36:36 UTC 2020\nCompiler: gcc version 7.5.0 (crosstool-NG 1.24.0.131_87df0e6_dirty) \nOptions: -O3 -msse2 -funroll-loops -g3 -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /usr/local/include -fdebug-prefix-map=/opt/conda/conda-bld/bowtie2_1604337828546/work=/usr/local/src/conda/bowtie2-2.4.2 -fdebug-prefix-map=/usr/local=/usr/local/src/conda-prefix -DPOPCNT_CAPABILITY -DWITH_TBB -std=c++11 -DNO_SPINLOCK -DWITH_QUEUELOCK=1\nSizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.4.2+galaxy0",
+        "history_id": "cfc21a260c388dca",
+        "params": {
+            "analysis_type": "{\"__current_case__\": 0, \"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\"}",
+            "library": "{\"__current_case__\": 1, \"aligned_file\": \"false\", \"input_1\": {\"values\": [{\"id\": 2, \"src\": \"hda\"}]}, \"input_2\": {\"values\": [{\"id\": 1, \"src\": \"hda\"}]}, \"paired_options\": {\"__current_case__\": 1, \"paired_options_selector\": \"no\"}, \"type\": \"paired\", \"unaligned_file\": \"false\"}",
+            "reference_genome": "{\"__current_case__\": 0, \"index\": \"hg38canon\", \"source\": \"indexed\"}",
+            "rg": "{\"__current_case__\": 3, \"rg_selector\": \"do_not_set\"}",
+            "sam_options": "{\"__current_case__\": 1, \"sam_options_selector\": \"no\"}",
+            "save_mapping_stats": "\"false\"",
+            "__workflow_invocation_uuid__": "\"a2e7df484cc111ed9ad8ae107963247e\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "input_1": {
+                "id": "c8e9a5c1016ee52d",
+                "src": "hda",
+                "uuid": "88de6dc2-cb5f-438c-b1a8-2f648915e4ce"
+            },
+            "input_2": {
+                "id": "47eb1f38e904c144",
+                "src": "hda",
+                "uuid": "970a02f6-8382-4354-9eed-885de86b4e8d"
+            }
+        },
+        "outputs": {
+            "output": {
+                "id": "a1b691b85a3db890",
+                "src": "hda",
+                "uuid": "c16bc6b2-dbd3-488a-a8f9-e9cbcd189fbe"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "6407453 reads; of these:\n  6407453 (100.00%) were paired; of these:\n    876145 (13.67%) aligned concordantly 0 times\n    4766496 (74.39%) aligned concordantly exactly 1 time\n    764812 (11.94%) aligned concordantly >1 times\n    ----\n    876145 pairs aligned concordantly 0 times; of these:\n      285813 (32.62%) aligned discordantly 1 time\n    ----\n    590332 pairs aligned 0 times concordantly or discordantly; of these:\n      1180664 mates make up the pairs; of these:\n        779948 (66.06%) aligned 0 times\n        216727 (18.36%) aligned exactly 1 time\n        183989 (15.58%) aligned >1 times\n93.91% overall alignment rate\n[bam_sort_core] merging from 4 files and 4 in-memory blocks...\n",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "6407453 reads; of these:\n  6407453 (100.00%) were paired; of these:\n    876145 (13.67%) aligned concordantly 0 times\n    4766496 (74.39%) aligned concordantly exactly 1 time\n    764812 (11.94%) aligned concordantly >1 times\n    ----\n    876145 pairs aligned concordantly 0 times; of these:\n      285813 (32.62%) aligned discordantly 1 time\n    ----\n    590332 pairs aligned 0 times concordantly or discordantly; of these:\n      1180664 mates make up the pairs; of these:\n        779948 (66.06%) aligned 0 times\n        216727 (18.36%) aligned exactly 1 time\n        183989 (15.58%) aligned >1 times\n93.91% overall alignment rate\n[bam_sort_core] merging from 4 files and 4 in-memory blocks...\n",
+        "stdout": "",
+        "job_messages": [],
+        "dependencies": []
+    },
+    "status": {
+        "model_class": "Job",
+        "id": "a1b691b85a3db890",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2022-10-15T20:06:31.036306",
+        "create_time": "2022-10-15T19:43:26.564745",
+        "galaxy_version": "22.05",
+        "command_version": "/usr/local/bin/bowtie2-align-s version 2.4.2\n64-bit\nBuilt on default-bf91a638-95fa-4b77-97c5-abccd9855c3e\nMon Nov  2 17:36:36 UTC 2020\nCompiler: gcc version 7.5.0 (crosstool-NG 1.24.0.131_87df0e6_dirty) \nOptions: -O3 -msse2 -funroll-loops -g3 -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /usr/local/include -fdebug-prefix-map=/opt/conda/conda-bld/bowtie2_1604337828546/work=/usr/local/src/conda/bowtie2-2.4.2 -fdebug-prefix-map=/usr/local=/usr/local/src/conda-prefix -DPOPCNT_CAPABILITY -DWITH_TBB -std=c++11 -DNO_SPINLOCK -DWITH_QUEUELOCK=1\nSizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.4.2+galaxy0",
+        "history_id": "cfc21a260c388dca",
+        "params": {
+            "analysis_type": "{\"__current_case__\": 0, \"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\"}",
+            "library": "{\"__current_case__\": 1, \"aligned_file\": \"false\", \"input_1\": {\"values\": [{\"id\": 2, \"src\": \"hda\"}]}, \"input_2\": {\"values\": [{\"id\": 1, \"src\": \"hda\"}]}, \"paired_options\": {\"__current_case__\": 1, \"paired_options_selector\": \"no\"}, \"type\": \"paired\", \"unaligned_file\": \"false\"}",
+            "reference_genome": "{\"__current_case__\": 0, \"index\": \"hg38canon\", \"source\": \"indexed\"}",
+            "rg": "{\"__current_case__\": 3, \"rg_selector\": \"do_not_set\"}",
+            "sam_options": "{\"__current_case__\": 1, \"sam_options_selector\": \"no\"}",
+            "save_mapping_stats": "\"false\"",
+            "__workflow_invocation_uuid__": "\"a2e7df484cc111ed9ad8ae107963247e\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "input_1": {
+                "id": "c8e9a5c1016ee52d",
+                "src": "hda",
+                "uuid": "88de6dc2-cb5f-438c-b1a8-2f648915e4ce"
+            },
+            "input_2": {
+                "id": "47eb1f38e904c144",
+                "src": "hda",
+                "uuid": "970a02f6-8382-4354-9eed-885de86b4e8d"
+            }
+        },
+        "outputs": {
+            "output": {
+                "id": "a1b691b85a3db890",
+                "src": "hda",
+                "uuid": "c16bc6b2-dbd3-488a-a8f9-e9cbcd189fbe"
+            }
+        },
+        "output_collections": {}
+    },
+    "server": "http://34.238.48.235/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        558003467,
+        591264254
+    ]
+}
