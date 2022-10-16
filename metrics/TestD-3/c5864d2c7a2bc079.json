@@ -1,0 +1,106 @@
+{
+    "run": "1",
+    "cloud": "c6i",
+    "job_conf": "4x32",
+    "workflow_id": "c4cfff09da5afb7a",
+    "history_id": "e1209b6aaeeab0cc",
+    "inputs": "human-10x-f human-10x-r",
+    "metrics": {
+        "model_class": "Job",
+        "id": "c5864d2c7a2bc079",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2022-10-16T17:55:46.158151",
+        "create_time": "2022-10-16T15:06:13.578288",
+        "galaxy_version": "22.05",
+        "command_version": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.1.0+galaxy7",
+        "history_id": "e1209b6aaeeab0cc",
+        "params": {
+            "adv": "{\"alignment_options\": {\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}, \"input_options\": {\"__current_case__\": 0, \"input_options_selector\": \"defaults\"}, \"other_options\": {\"__current_case__\": 0, \"other_options_selector\": \"defaults\"}, \"output_options\": {\"__current_case__\": 0, \"output_options_selector\": \"defaults\"}, \"reporting_options\": {\"__current_case__\": 0, \"reporting_options_selector\": \"defaults\"}, \"sam_options\": {\"__current_case__\": 0, \"sam_options_selector\": \"defaults\"}, \"scoring_options\": {\"__current_case__\": 0, \"scoring_options_selector\": \"defaults\"}, \"spliced_options\": {\"__current_case__\": 0, \"spliced_options_selector\": \"defaults\"}}",
+            "library": "{\"__current_case__\": 1, \"input_1\": {\"values\": [{\"id\": 4, \"src\": \"hda\"}]}, \"input_2\": {\"values\": [{\"id\": 3, \"src\": \"hda\"}]}, \"paired_options\": {\"__current_case__\": 0, \"paired_options_selector\": \"defaults\"}, \"rna_strandness\": \"\", \"type\": \"paired\"}",
+            "reference_genome": "{\"__current_case__\": 0, \"index\": \"hg38\", \"source\": \"indexed\"}",
+            "sum": "{\"new_summary\": \"false\", \"summary_file\": \"false\"}",
+            "__workflow_invocation_uuid__": "\"130de95a4d6411ed82bdfe959d05009a\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "input_2": {
+                "id": "e6a3260aca043b83",
+                "src": "hda",
+                "uuid": "39724695-fb1a-4712-9161-4baf86fa4930"
+            },
+            "input_1": {
+                "id": "5b7dcd0d43e0865a",
+                "src": "hda",
+                "uuid": "d437f9d4-deac-4b8d-b687-8d2488cf276d"
+            }
+        },
+        "outputs": {
+            "output_alignments": {
+                "id": "c5864d2c7a2bc079",
+                "src": "hda",
+                "uuid": "8d2cc498-c875-419c-b0ac-c60ac3b2c9f1"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": []
+    },
+    "status": {
+        "model_class": "Job",
+        "id": "c5864d2c7a2bc079",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2022-10-16T17:55:46.158151",
+        "create_time": "2022-10-16T15:06:13.578288",
+        "galaxy_version": "22.05",
+        "command_version": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.1.0+galaxy7",
+        "history_id": "e1209b6aaeeab0cc",
+        "params": {
+            "adv": "{\"alignment_options\": {\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}, \"input_options\": {\"__current_case__\": 0, \"input_options_selector\": \"defaults\"}, \"other_options\": {\"__current_case__\": 0, \"other_options_selector\": \"defaults\"}, \"output_options\": {\"__current_case__\": 0, \"output_options_selector\": \"defaults\"}, \"reporting_options\": {\"__current_case__\": 0, \"reporting_options_selector\": \"defaults\"}, \"sam_options\": {\"__current_case__\": 0, \"sam_options_selector\": \"defaults\"}, \"scoring_options\": {\"__current_case__\": 0, \"scoring_options_selector\": \"defaults\"}, \"spliced_options\": {\"__current_case__\": 0, \"spliced_options_selector\": \"defaults\"}}",
+            "library": "{\"__current_case__\": 1, \"input_1\": {\"values\": [{\"id\": 4, \"src\": \"hda\"}]}, \"input_2\": {\"values\": [{\"id\": 3, \"src\": \"hda\"}]}, \"paired_options\": {\"__current_case__\": 0, \"paired_options_selector\": \"defaults\"}, \"rna_strandness\": \"\", \"type\": \"paired\"}",
+            "reference_genome": "{\"__current_case__\": 0, \"index\": \"hg38\", \"source\": \"indexed\"}",
+            "sum": "{\"new_summary\": \"false\", \"summary_file\": \"false\"}",
+            "__workflow_invocation_uuid__": "\"130de95a4d6411ed82bdfe959d05009a\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "input_2": {
+                "id": "e6a3260aca043b83",
+                "src": "hda",
+                "uuid": "39724695-fb1a-4712-9161-4baf86fa4930"
+            },
+            "input_1": {
+                "id": "5b7dcd0d43e0865a",
+                "src": "hda",
+                "uuid": "d437f9d4-deac-4b8d-b687-8d2488cf276d"
+            }
+        },
+        "outputs": {
+            "output_alignments": {
+                "id": "c5864d2c7a2bc079",
+                "src": "hda",
+                "uuid": "8d2cc498-c875-419c-b0ac-c60ac3b2c9f1"
+            }
+        },
+        "output_collections": {}
+    },
+    "server": "http://18.235.144.178/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5623417156,
+        5917669619
+    ]
+}

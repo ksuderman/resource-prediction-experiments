@@ -1,0 +1,110 @@
+{
+    "run": "1",
+    "cloud": "m6i",
+    "job_conf": "4x16",
+    "workflow_id": "d8d88bc5af446406",
+    "history_id": "8adc651221a90ec7",
+    "inputs": "human-10x-f human-10x-r",
+    "metrics": {
+        "model_class": "Job",
+        "id": "c1010fe40e23d283",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2022-10-16T03:35:41.112035",
+        "create_time": "2022-10-16T03:32:38.213834",
+        "galaxy_version": "22.05",
+        "command_version": "2.17-r941",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.17+galaxy4",
+        "history_id": "8adc651221a90ec7",
+        "params": {
+            "alignment_options": "{\"A\": null, \"B\": null, \"E\": null, \"E2\": null, \"O\": null, \"O2\": null, \"no_end_flt\": \"true\", \"s\": null, \"splicing\": {\"__current_case__\": 0, \"splice_mode\": \"preset\"}, \"z\": null, \"z2\": null}",
+            "fastq_input": "{\"__current_case__\": 1, \"analysis_type_selector\": \"sr\", \"fastq_input1\": {\"values\": [{\"id\": 4, \"src\": \"hda\"}]}, \"fastq_input2\": {\"values\": [{\"id\": 3, \"src\": \"hda\"}]}, \"fastq_input_selector\": \"paired\"}",
+            "indexing_options": "{\"H\": \"false\", \"I\": null, \"k\": null, \"w\": null}",
+            "io_options": "{\"K\": null, \"L\": \"false\", \"Q\": \"false\", \"Y\": \"false\", \"c\": \"false\", \"cs\": null, \"eqx\": \"false\", \"output_format\": \"BAM\"}",
+            "mapping_options": "{\"F\": null, \"N\": null, \"X\": \"false\", \"f\": null, \"g\": null, \"m\": null, \"max_chain_iter\": null, \"max_chain_skip\": null, \"min_occ_floor\": null, \"n\": null, \"p\": null, \"r\": null}",
+            "reference_source": "{\"__current_case__\": 0, \"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\"}",
+            "__workflow_invocation_uuid__": "\"2e80b23c4d0311edb83132e38a1e75a0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "fastq_input1": {
+                "id": "b924587fdfb8d554",
+                "src": "hda",
+                "uuid": "f54ebdc1-8ba3-4ae6-81a1-5b7a5377cba1"
+            },
+            "fastq_input2": {
+                "id": "137b966e80e8f0b4",
+                "src": "hda",
+                "uuid": "4ea9c4b8-2595-4772-b739-f41673310f69"
+            }
+        },
+        "outputs": {
+            "alignment_output": {
+                "id": "c1010fe40e23d283",
+                "src": "hda",
+                "uuid": "7f04fffe-ae51-4cc6-95d8-8494a53c36de"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "[M::mm_idx_gen::113.848*0.59] collected minimizers\n",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "[M::mm_idx_gen::113.848*0.59] collected minimizers\n",
+        "stdout": "",
+        "job_messages": [],
+        "dependencies": []
+    },
+    "status": {
+        "model_class": "Job",
+        "id": "c1010fe40e23d283",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2022-10-16T03:35:41.112035",
+        "create_time": "2022-10-16T03:32:38.213834",
+        "galaxy_version": "22.05",
+        "command_version": "2.17-r941",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.17+galaxy4",
+        "history_id": "8adc651221a90ec7",
+        "params": {
+            "alignment_options": "{\"A\": null, \"B\": null, \"E\": null, \"E2\": null, \"O\": null, \"O2\": null, \"no_end_flt\": \"true\", \"s\": null, \"splicing\": {\"__current_case__\": 0, \"splice_mode\": \"preset\"}, \"z\": null, \"z2\": null}",
+            "fastq_input": "{\"__current_case__\": 1, \"analysis_type_selector\": \"sr\", \"fastq_input1\": {\"values\": [{\"id\": 4, \"src\": \"hda\"}]}, \"fastq_input2\": {\"values\": [{\"id\": 3, \"src\": \"hda\"}]}, \"fastq_input_selector\": \"paired\"}",
+            "indexing_options": "{\"H\": \"false\", \"I\": null, \"k\": null, \"w\": null}",
+            "io_options": "{\"K\": null, \"L\": \"false\", \"Q\": \"false\", \"Y\": \"false\", \"c\": \"false\", \"cs\": null, \"eqx\": \"false\", \"output_format\": \"BAM\"}",
+            "mapping_options": "{\"F\": null, \"N\": null, \"X\": \"false\", \"f\": null, \"g\": null, \"m\": null, \"max_chain_iter\": null, \"max_chain_skip\": null, \"min_occ_floor\": null, \"n\": null, \"p\": null, \"r\": null}",
+            "reference_source": "{\"__current_case__\": 0, \"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\"}",
+            "__workflow_invocation_uuid__": "\"2e80b23c4d0311edb83132e38a1e75a0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "fastq_input1": {
+                "id": "b924587fdfb8d554",
+                "src": "hda",
+                "uuid": "f54ebdc1-8ba3-4ae6-81a1-5b7a5377cba1"
+            },
+            "fastq_input2": {
+                "id": "137b966e80e8f0b4",
+                "src": "hda",
+                "uuid": "4ea9c4b8-2595-4772-b739-f41673310f69"
+            }
+        },
+        "outputs": {
+            "alignment_output": {
+                "id": "c1010fe40e23d283",
+                "src": "hda",
+                "uuid": "7f04fffe-ae51-4cc6-95d8-8494a53c36de"
+            }
+        },
+        "output_collections": {}
+    },
+    "server": "http://34.206.161.49/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5623417156,
+        5917669619
+    ]
+}
