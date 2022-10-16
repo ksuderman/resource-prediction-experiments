@@ -1,0 +1,114 @@
+{
+    "run": "1",
+    "cloud": "m6i",
+    "job_conf": "32x128",
+    "workflow_id": "66af23c7a025207e",
+    "history_id": "f91d0834be089954",
+    "inputs": "human-10x-f human-10x-r",
+    "metrics": {
+        "model_class": "Job",
+        "id": "90127ae61d812fc3",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2022-10-12T18:31:47.003257",
+        "create_time": "2022-10-12T16:08:37.318449",
+        "galaxy_version": "22.05",
+        "command_version": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.1.0+galaxy7",
+        "history_id": "f91d0834be089954",
+        "external_id": "gxy-galaxy-pxfxs",
+        "command_line": "ln -f -s '/galaxy/server/database/objects/2/7/8/dataset_278b5f82-e795-4e19-8a4b-b9e53dfef542.dat' input_f.fastq.gz &&  ln -f -s '/galaxy/server/database/objects/e/d/c/dataset_edc44bd8-b7c2-48b0-a8b4-6bf888b04961.dat' input_r.fastq.gz &&     hisat2  -p ${GALAXY_SLOTS:-1}  -x '/cvmfs/data.galaxyproject.org/managed/hisat2_index/hg38/hg38'    -1 'input_f.fastq.gz' -2 'input_r.fastq.gz'                                | samtools sort -l 0 -T \"${TMPDIR:-.}\" -O bam | samtools view -O bam -@ ${GALAXY_SLOTS:-1} -o '/galaxy/server/database/objects/d/7/c/dataset_d7c2f2b4-7603-4f42-8244-666d880d86b1.dat'",
+        "traceback": null,
+        "params": {
+            "adv": "{\"alignment_options\": {\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}, \"input_options\": {\"__current_case__\": 0, \"input_options_selector\": \"defaults\"}, \"other_options\": {\"__current_case__\": 0, \"other_options_selector\": \"defaults\"}, \"output_options\": {\"__current_case__\": 0, \"output_options_selector\": \"defaults\"}, \"reporting_options\": {\"__current_case__\": 0, \"reporting_options_selector\": \"defaults\"}, \"sam_options\": {\"__current_case__\": 0, \"sam_options_selector\": \"defaults\"}, \"scoring_options\": {\"__current_case__\": 0, \"scoring_options_selector\": \"defaults\"}, \"spliced_options\": {\"__current_case__\": 0, \"spliced_options_selector\": \"defaults\"}}",
+            "library": "{\"__current_case__\": 1, \"input_1\": {\"values\": [{\"id\": 54, \"src\": \"hda\"}]}, \"input_2\": {\"values\": [{\"id\": 55, \"src\": \"hda\"}]}, \"paired_options\": {\"__current_case__\": 0, \"paired_options_selector\": \"defaults\"}, \"rna_strandness\": \"\", \"type\": \"paired\"}",
+            "reference_genome": "{\"__current_case__\": 0, \"index\": \"hg38\", \"source\": \"indexed\"}",
+            "sum": "{\"new_summary\": \"false\", \"summary_file\": \"false\"}",
+            "__workflow_invocation_uuid__": "\"207954224a4811ed92b8c672d556a83b\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "input_1": {
+                "id": "d97c58038005640d",
+                "src": "hda",
+                "uuid": "278b5f82-e795-4e19-8a4b-b9e53dfef542"
+            },
+            "input_2": {
+                "id": "74fc59ab94f067e9",
+                "src": "hda",
+                "uuid": "edc44bd8-b7c2-48b0-a8b4-6bf888b04961"
+            }
+        },
+        "outputs": {
+            "output_alignments": {
+                "id": "3c43fcc9d3e9721a",
+                "src": "hda",
+                "uuid": "d7c2f2b4-7603-4f42-8244-666d880d86b1"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "suderman@jhu.edu",
+        "job_metrics": []
+    },
+    "status": {
+        "model_class": "Job",
+        "id": "90127ae61d812fc3",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2022-10-12T18:31:47.003257",
+        "create_time": "2022-10-12T16:08:37.318449",
+        "galaxy_version": "22.05",
+        "command_version": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.1.0+galaxy7",
+        "history_id": "f91d0834be089954",
+        "external_id": "gxy-galaxy-pxfxs",
+        "command_line": "ln -f -s '/galaxy/server/database/objects/2/7/8/dataset_278b5f82-e795-4e19-8a4b-b9e53dfef542.dat' input_f.fastq.gz &&  ln -f -s '/galaxy/server/database/objects/e/d/c/dataset_edc44bd8-b7c2-48b0-a8b4-6bf888b04961.dat' input_r.fastq.gz &&     hisat2  -p ${GALAXY_SLOTS:-1}  -x '/cvmfs/data.galaxyproject.org/managed/hisat2_index/hg38/hg38'    -1 'input_f.fastq.gz' -2 'input_r.fastq.gz'                                | samtools sort -l 0 -T \"${TMPDIR:-.}\" -O bam | samtools view -O bam -@ ${GALAXY_SLOTS:-1} -o '/galaxy/server/database/objects/d/7/c/dataset_d7c2f2b4-7603-4f42-8244-666d880d86b1.dat'",
+        "traceback": null,
+        "params": {
+            "adv": "{\"alignment_options\": {\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}, \"input_options\": {\"__current_case__\": 0, \"input_options_selector\": \"defaults\"}, \"other_options\": {\"__current_case__\": 0, \"other_options_selector\": \"defaults\"}, \"output_options\": {\"__current_case__\": 0, \"output_options_selector\": \"defaults\"}, \"reporting_options\": {\"__current_case__\": 0, \"reporting_options_selector\": \"defaults\"}, \"sam_options\": {\"__current_case__\": 0, \"sam_options_selector\": \"defaults\"}, \"scoring_options\": {\"__current_case__\": 0, \"scoring_options_selector\": \"defaults\"}, \"spliced_options\": {\"__current_case__\": 0, \"spliced_options_selector\": \"defaults\"}}",
+            "library": "{\"__current_case__\": 1, \"input_1\": {\"values\": [{\"id\": 54, \"src\": \"hda\"}]}, \"input_2\": {\"values\": [{\"id\": 55, \"src\": \"hda\"}]}, \"paired_options\": {\"__current_case__\": 0, \"paired_options_selector\": \"defaults\"}, \"rna_strandness\": \"\", \"type\": \"paired\"}",
+            "reference_genome": "{\"__current_case__\": 0, \"index\": \"hg38\", \"source\": \"indexed\"}",
+            "sum": "{\"new_summary\": \"false\", \"summary_file\": \"false\"}",
+            "__workflow_invocation_uuid__": "\"207954224a4811ed92b8c672d556a83b\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "input_1": {
+                "id": "d97c58038005640d",
+                "src": "hda",
+                "uuid": "278b5f82-e795-4e19-8a4b-b9e53dfef542"
+            },
+            "input_2": {
+                "id": "74fc59ab94f067e9",
+                "src": "hda",
+                "uuid": "edc44bd8-b7c2-48b0-a8b4-6bf888b04961"
+            }
+        },
+        "outputs": {
+            "output_alignments": {
+                "id": "3c43fcc9d3e9721a",
+                "src": "hda",
+                "uuid": "d7c2f2b4-7603-4f42-8244-666d880d86b1"
+            }
+        },
+        "output_collections": {}
+    },
+    "server": "http://34.238.48.235/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5623417156,
+        5917669619
+    ]
+}
