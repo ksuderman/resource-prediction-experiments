@@ -1,4 +1,4 @@
-job_id,tool_id,tool_version,state,memory.max_usage_in_bytes,cpuacct.usage,process_count,galaxy_slots,runtime_seconds,ref_data_size,input_data_size
+job_id,tool_id,tool_version,state,memory.max_usage_in_bytes,cpuacct.usage,process_count,galaxy_slots,runtime_seconds,ref_data_size,input_data_size_1.input_data_size_2
 60869dd8d1b4adf7,toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.1.0+galaxy7,2.1.0+galaxy7,ok,17179168768.0000000,12431349049736.0000000,48.0000000,4.0000000,3206.0000000,0,5623417156,5917669619
 c2dd2f40c83cfef6,toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.17+galaxy4,2.17+galaxy4,ok,48738467840.0000000,29501860117438.0000000,48.0000000,16.0000000,2096.0000000,0,5623417156,5917669619
 e873d4ac8c232cfd,toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.4.2+galaxy0,2.4.2+galaxy0,error,14712832.0000000,117070719.0000000,48.0000000,4.0000000,10.0000000,0,5623417156,5917669619
