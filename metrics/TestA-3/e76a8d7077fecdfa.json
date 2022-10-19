@@ -1,0 +1,114 @@
+{
+    "run": "1",
+    "cloud": "m6i",
+    "job_conf": "4x16",
+    "workflow_id": "dddfe5b0fd87f766",
+    "history_id": "4793901f77e7106d",
+    "inputs": "human-10x-f human-10x-r",
+    "metrics": {
+        "model_class": "Job",
+        "id": "e76a8d7077fecdfa",
+        "state": "error",
+        "exit_code": 135,
+        "update_time": "2022-10-16T20:58:56.262788",
+        "create_time": "2022-10-16T20:56:14.100083",
+        "galaxy_version": "22.05",
+        "command_version": "",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1",
+        "history_id": "4793901f77e7106d",
+        "params": {
+            "analysis_type": "{\"__current_case__\": 0, \"analysis_type_selector\": \"illumina\"}",
+            "fastq_input": "{\"__current_case__\": 0, \"fastq_input1\": {\"values\": [{\"id\": 4, \"src\": \"hda\"}]}, \"fastq_input2\": {\"values\": [{\"id\": 3, \"src\": \"hda\"}]}, \"fastq_input_selector\": \"paired\", \"iset_stats\": \"\"}",
+            "reference_source": "{\"__current_case__\": 0, \"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\"}",
+            "rg": "{\"__current_case__\": 3, \"rg_selector\": \"do_not_set\"}",
+            "__workflow_invocation_uuid__": "\"f81822604d9411ed9ea8165473fb1a62\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"fastqsanger.gz\""
+        },
+        "inputs": {
+            "fastq_input2": {
+                "id": "f0c0e5d877f606cd",
+                "src": "hda",
+                "uuid": "4ea9c4b8-2595-4772-b739-f41673310f69"
+            },
+            "fastq_input1": {
+                "id": "11c3f9f12a9e8305",
+                "src": "hda",
+                "uuid": "f54ebdc1-8ba3-4ae6-81a1-5b7a5377cba1"
+            }
+        },
+        "outputs": {
+            "bam_output": {
+                "id": "e76a8d7077fecdfa",
+                "src": "hda",
+                "uuid": "0642feac-94b6-4181-96b6-25feee7c5c76"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "/galaxy/server/database/jobs_directory/000/28/tool_script.sh: line 22:    27 Bus error               (core dumped) bwa mem -t \"${GALAXY_SLOTS:-1}\" -v 1 '/cvmfs/data.galaxyproject.org/byhand/hg38/hg38full/bwa_index_v0.7.10-r789/hg38full.fa' '/galaxy/server/database/objects/f/5/4/dataset_f54ebdc1-8ba3-4ae6-81a1-5b7a5377cba1.dat' '/galaxy/server/database/objects/4/e/a/dataset_4ea9c4b8-2595-4772-b739-f41673310f69.dat'\n        28 Done                    | samtools sort -@${GALAXY_SLOTS:-2} -T \"${TMPDIR:-.}\" -O bam -o '/galaxy/server/database/objects/0/6/4/dataset_0642feac-94b6-4181-96b6-25feee7c5c76.dat'\n",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "/galaxy/server/database/jobs_directory/000/28/tool_script.sh: line 22:    27 Bus error               (core dumped) bwa mem -t \"${GALAXY_SLOTS:-1}\" -v 1 '/cvmfs/data.galaxyproject.org/byhand/hg38/hg38full/bwa_index_v0.7.10-r789/hg38full.fa' '/galaxy/server/database/objects/f/5/4/dataset_f54ebdc1-8ba3-4ae6-81a1-5b7a5377cba1.dat' '/galaxy/server/database/objects/4/e/a/dataset_4ea9c4b8-2595-4772-b739-f41673310f69.dat'\n        28 Done                    | samtools sort -@${GALAXY_SLOTS:-2} -T \"${TMPDIR:-.}\" -O bam -o '/galaxy/server/database/objects/0/6/4/dataset_0642feac-94b6-4181-96b6-25feee7c5c76.dat'\n",
+        "stdout": "",
+        "job_messages": [
+            {
+                "code_desc": "",
+                "desc": "Fatal error: Exit code 135 ()",
+                "error_level": 3,
+                "exit_code": 135,
+                "type": "exit_code"
+            }
+        ],
+        "dependencies": []
+    },
+    "status": {
+        "model_class": "Job",
+        "id": "e76a8d7077fecdfa",
+        "state": "error",
+        "exit_code": 135,
+        "update_time": "2022-10-16T20:58:56.262788",
+        "create_time": "2022-10-16T20:56:14.100083",
+        "galaxy_version": "22.05",
+        "command_version": "",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1",
+        "history_id": "4793901f77e7106d",
+        "params": {
+            "analysis_type": "{\"__current_case__\": 0, \"analysis_type_selector\": \"illumina\"}",
+            "fastq_input": "{\"__current_case__\": 0, \"fastq_input1\": {\"values\": [{\"id\": 4, \"src\": \"hda\"}]}, \"fastq_input2\": {\"values\": [{\"id\": 3, \"src\": \"hda\"}]}, \"fastq_input_selector\": \"paired\", \"iset_stats\": \"\"}",
+            "reference_source": "{\"__current_case__\": 0, \"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\"}",
+            "rg": "{\"__current_case__\": 3, \"rg_selector\": \"do_not_set\"}",
+            "__workflow_invocation_uuid__": "\"f81822604d9411ed9ea8165473fb1a62\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"fastqsanger.gz\""
+        },
+        "inputs": {
+            "fastq_input2": {
+                "id": "f0c0e5d877f606cd",
+                "src": "hda",
+                "uuid": "4ea9c4b8-2595-4772-b739-f41673310f69"
+            },
+            "fastq_input1": {
+                "id": "11c3f9f12a9e8305",
+                "src": "hda",
+                "uuid": "f54ebdc1-8ba3-4ae6-81a1-5b7a5377cba1"
+            }
+        },
+        "outputs": {
+            "bam_output": {
+                "id": "e76a8d7077fecdfa",
+                "src": "hda",
+                "uuid": "0642feac-94b6-4181-96b6-25feee7c5c76"
+            }
+        },
+        "output_collections": {}
+    },
+    "server": "http://34.206.161.49/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5623417156,
+        5917669619
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "run": "1",
+    "cloud": "n2",
+    "job_conf": "16x64",
+    "workflow_id": "2a5028ce96a1fef6",
+    "history_id": "d2b3d3c8cc016bcf",
+    "inputs": "human-10x-f human-10x-r",
+    "metrics": {
+        "model_class": "Job",
+        "id": "2e5eca266e71b948",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2022-10-17T10:45:37.361247",
+        "create_time": "2022-10-17T09:17:59.458132",
+        "galaxy_version": "22.05",
+        "command_version": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.4.2+galaxy0",
+        "history_id": "d2b3d3c8cc016bcf",
+        "external_id": "gxy-galaxy-mgr6x",
+        "command_line": "set -o | grep -q pipefail && set -o pipefail;   ln -f -s '/galaxy/server/database/objects/a/f/0/dataset_af020229-f876-4257-98f2-f998d44cee1f.dat' input_f.fastq.gz &&  ln -f -s '/galaxy/server/database/objects/4/8/9/dataset_48942093-1409-48ef-ad4c-43d9d2ec5faa.dat' input_r.fastq.gz &&   bowtie2  -p ${GALAXY_SLOTS:-4}  -x '/cvmfs/data.galaxyproject.org/byhand/hg38/hg38canon/bowtie2_index/hg38canon'   -1 'input_f.fastq.gz' -2 'input_r.fastq.gz'                 | samtools sort -@${GALAXY_SLOTS:-2} -T \"${TMPDIR:-.}\" -O bam -o '/galaxy/server/database/objects/5/6/0/dataset_560fb340-8d30-4ac0-a469-2c790c9263d5.dat'",
+        "traceback": null,
+        "params": {
+            "analysis_type": "{\"__current_case__\": 0, \"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\"}",
+            "library": "{\"__current_case__\": 1, \"aligned_file\": \"false\", \"input_1\": {\"values\": [{\"id\": 14, \"src\": \"hda\"}]}, \"input_2\": {\"values\": [{\"id\": 15, \"src\": \"hda\"}]}, \"paired_options\": {\"__current_case__\": 1, \"paired_options_selector\": \"no\"}, \"type\": \"paired\", \"unaligned_file\": \"false\"}",
+            "reference_genome": "{\"__current_case__\": 0, \"index\": \"hg38canon\", \"source\": \"indexed\"}",
+            "rg": "{\"__current_case__\": 3, \"rg_selector\": \"do_not_set\"}",
+            "sam_options": "{\"__current_case__\": 1, \"sam_options_selector\": \"no\"}",
+            "save_mapping_stats": "\"false\"",
+            "__workflow_invocation_uuid__": "\"97b146964dfc11edae7c2a8e0cc67f4e\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "input_1": {
+                "id": "ab7980b94566fa8a",
+                "src": "hda",
+                "uuid": "af020229-f876-4257-98f2-f998d44cee1f"
+            },
+            "input_2": {
+                "id": "cef34e75e519d960",
+                "src": "hda",
+                "uuid": "48942093-1409-48ef-ad4c-43d9d2ec5faa"
+            }
+        },
+        "outputs": {
+            "output": {
+                "id": "577b50a4cdc0f51e",
+                "src": "hda",
+                "uuid": "560fb340-8d30-4ac0-a469-2c790c9263d5"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "suderman@jhu.edu",
+        "job_metrics": []
+    },
+    "status": {
+        "model_class": "Job",
+        "id": "2e5eca266e71b948",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2022-10-17T10:45:37.361247",
+        "create_time": "2022-10-17T09:17:59.458132",
+        "galaxy_version": "22.05",
+        "command_version": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.4.2+galaxy0",
+        "history_id": "d2b3d3c8cc016bcf",
+        "external_id": "gxy-galaxy-mgr6x",
+        "command_line": "set -o | grep -q pipefail && set -o pipefail;   ln -f -s '/galaxy/server/database/objects/a/f/0/dataset_af020229-f876-4257-98f2-f998d44cee1f.dat' input_f.fastq.gz &&  ln -f -s '/galaxy/server/database/objects/4/8/9/dataset_48942093-1409-48ef-ad4c-43d9d2ec5faa.dat' input_r.fastq.gz &&   bowtie2  -p ${GALAXY_SLOTS:-4}  -x '/cvmfs/data.galaxyproject.org/byhand/hg38/hg38canon/bowtie2_index/hg38canon'   -1 'input_f.fastq.gz' -2 'input_r.fastq.gz'                 | samtools sort -@${GALAXY_SLOTS:-2} -T \"${TMPDIR:-.}\" -O bam -o '/galaxy/server/database/objects/5/6/0/dataset_560fb340-8d30-4ac0-a469-2c790c9263d5.dat'",
+        "traceback": null,
+        "params": {
+            "analysis_type": "{\"__current_case__\": 0, \"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\"}",
+            "library": "{\"__current_case__\": 1, \"aligned_file\": \"false\", \"input_1\": {\"values\": [{\"id\": 14, \"src\": \"hda\"}]}, \"input_2\": {\"values\": [{\"id\": 15, \"src\": \"hda\"}]}, \"paired_options\": {\"__current_case__\": 1, \"paired_options_selector\": \"no\"}, \"type\": \"paired\", \"unaligned_file\": \"false\"}",
+            "reference_genome": "{\"__current_case__\": 0, \"index\": \"hg38canon\", \"source\": \"indexed\"}",
+            "rg": "{\"__current_case__\": 3, \"rg_selector\": \"do_not_set\"}",
+            "sam_options": "{\"__current_case__\": 1, \"sam_options_selector\": \"no\"}",
+            "save_mapping_stats": "\"false\"",
+            "__workflow_invocation_uuid__": "\"97b146964dfc11edae7c2a8e0cc67f4e\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "input_1": {
+                "id": "ab7980b94566fa8a",
+                "src": "hda",
+                "uuid": "af020229-f876-4257-98f2-f998d44cee1f"
+            },
+            "input_2": {
+                "id": "cef34e75e519d960",
+                "src": "hda",
+                "uuid": "48942093-1409-48ef-ad4c-43d9d2ec5faa"
+            }
+        },
+        "outputs": {
+            "output": {
+                "id": "577b50a4cdc0f51e",
+                "src": "hda",
+                "uuid": "560fb340-8d30-4ac0-a469-2c790c9263d5"
+            }
+        },
+        "output_collections": {}
+    },
+    "server": "http://104.196.131.213/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5623417156,
+        5917669619
+    ]
+}

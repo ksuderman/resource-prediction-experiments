@@ -1,0 +1,114 @@
+{
+    "run": "1",
+    "cloud": "n2",
+    "job_conf": "16x64",
+    "workflow_id": "2a5028ce96a1fef6",
+    "history_id": "d2b3d3c8cc016bcf",
+    "inputs": "human-10x-f human-10x-r",
+    "metrics": {
+        "model_class": "Job",
+        "id": "9ee069db971768a5",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2022-10-17T12:14:06.340680",
+        "create_time": "2022-10-17T09:17:59.572663",
+        "galaxy_version": "22.05",
+        "command_version": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1",
+        "history_id": "d2b3d3c8cc016bcf",
+        "external_id": "gxy-galaxy-9rz68",
+        "command_line": "set -o | grep -q pipefail && set -o pipefail;     bwa mem -t \"${GALAXY_SLOTS:-1}\" -v 1                 '/cvmfs/data.galaxyproject.org/byhand/hg38/hg38full/bwa_index_v0.7.10-r789/hg38full.fa' '/galaxy/server/database/objects/a/f/0/dataset_af020229-f876-4257-98f2-f998d44cee1f.dat' '/galaxy/server/database/objects/4/8/9/dataset_48942093-1409-48ef-ad4c-43d9d2ec5faa.dat'  | samtools sort -@${GALAXY_SLOTS:-2} -T \"${TMPDIR:-.}\" -O bam -o '/galaxy/server/database/objects/a/8/1/dataset_a815853c-1b74-4ba2-8adb-c74a5442eb37.dat'",
+        "traceback": null,
+        "params": {
+            "analysis_type": "{\"__current_case__\": 0, \"analysis_type_selector\": \"illumina\"}",
+            "fastq_input": "{\"__current_case__\": 0, \"fastq_input1\": {\"values\": [{\"id\": 14, \"src\": \"hda\"}]}, \"fastq_input2\": {\"values\": [{\"id\": 15, \"src\": \"hda\"}]}, \"fastq_input_selector\": \"paired\", \"iset_stats\": \"\"}",
+            "reference_source": "{\"__current_case__\": 0, \"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\"}",
+            "rg": "{\"__current_case__\": 3, \"rg_selector\": \"do_not_set\"}",
+            "__workflow_invocation_uuid__": "\"97b146964dfc11edae7c2a8e0cc67f4e\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"fastqsanger.gz\""
+        },
+        "inputs": {
+            "fastq_input1": {
+                "id": "ab7980b94566fa8a",
+                "src": "hda",
+                "uuid": "af020229-f876-4257-98f2-f998d44cee1f"
+            },
+            "fastq_input2": {
+                "id": "cef34e75e519d960",
+                "src": "hda",
+                "uuid": "48942093-1409-48ef-ad4c-43d9d2ec5faa"
+            }
+        },
+        "outputs": {
+            "bam_output": {
+                "id": "4ae699bed4218b0e",
+                "src": "hda",
+                "uuid": "a815853c-1b74-4ba2-8adb-c74a5442eb37"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "suderman@jhu.edu",
+        "job_metrics": []
+    },
+    "status": {
+        "model_class": "Job",
+        "id": "9ee069db971768a5",
+        "state": "error",
+        "exit_code": null,
+        "update_time": "2022-10-17T12:14:06.340680",
+        "create_time": "2022-10-17T09:17:59.572663",
+        "galaxy_version": "22.05",
+        "command_version": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1",
+        "history_id": "d2b3d3c8cc016bcf",
+        "external_id": "gxy-galaxy-9rz68",
+        "command_line": "set -o | grep -q pipefail && set -o pipefail;     bwa mem -t \"${GALAXY_SLOTS:-1}\" -v 1                 '/cvmfs/data.galaxyproject.org/byhand/hg38/hg38full/bwa_index_v0.7.10-r789/hg38full.fa' '/galaxy/server/database/objects/a/f/0/dataset_af020229-f876-4257-98f2-f998d44cee1f.dat' '/galaxy/server/database/objects/4/8/9/dataset_48942093-1409-48ef-ad4c-43d9d2ec5faa.dat'  | samtools sort -@${GALAXY_SLOTS:-2} -T \"${TMPDIR:-.}\" -O bam -o '/galaxy/server/database/objects/a/8/1/dataset_a815853c-1b74-4ba2-8adb-c74a5442eb37.dat'",
+        "traceback": null,
+        "params": {
+            "analysis_type": "{\"__current_case__\": 0, \"analysis_type_selector\": \"illumina\"}",
+            "fastq_input": "{\"__current_case__\": 0, \"fastq_input1\": {\"values\": [{\"id\": 14, \"src\": \"hda\"}]}, \"fastq_input2\": {\"values\": [{\"id\": 15, \"src\": \"hda\"}]}, \"fastq_input_selector\": \"paired\", \"iset_stats\": \"\"}",
+            "reference_source": "{\"__current_case__\": 0, \"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\"}",
+            "rg": "{\"__current_case__\": 3, \"rg_selector\": \"do_not_set\"}",
+            "__workflow_invocation_uuid__": "\"97b146964dfc11edae7c2a8e0cc67f4e\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"fastqsanger.gz\""
+        },
+        "inputs": {
+            "fastq_input1": {
+                "id": "ab7980b94566fa8a",
+                "src": "hda",
+                "uuid": "af020229-f876-4257-98f2-f998d44cee1f"
+            },
+            "fastq_input2": {
+                "id": "cef34e75e519d960",
+                "src": "hda",
+                "uuid": "48942093-1409-48ef-ad4c-43d9d2ec5faa"
+            }
+        },
+        "outputs": {
+            "bam_output": {
+                "id": "4ae699bed4218b0e",
+                "src": "hda",
+                "uuid": "a815853c-1b74-4ba2-8adb-c74a5442eb37"
+            }
+        },
+        "output_collections": {}
+    },
+    "server": "http://104.196.131.213/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        5623417156,
+        5917669619
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "model_class": "WorkflowInvocation",
+    "id": "ae7874b90195de38",
+    "update_time": "2022-10-19T00:30:20.872142",
+    "create_time": "2022-10-19T00:30:19.917591",
+    "workflow_id": "198c4bc4f356a879",
+    "history_id": "6b7239c76096a434",
+    "uuid": "36350d68-4f45-11ed-b4a7-dee7ef8b754a",
+    "state": "scheduled",
+    "steps": [
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "b9ceb4037f6220b8",
+            "update_time": "2022-10-19T00:30:20.710674",
+            "job_id": null,
+            "workflow_step_id": "97d01eb093028ccd",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 0,
+            "workflow_step_label": "FASTQ Dataset forward",
+            "workflow_step_uuid": "218a5ebf-3f8b-430d-9df1-2b2faf29f2b1"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "08378c69514901ba",
+            "update_time": "2022-10-19T00:30:20.710676",
+            "job_id": null,
+            "workflow_step_id": "6b7239c76096a434",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 1,
+            "workflow_step_label": "FASTQ Dataset reverse",
+            "workflow_step_uuid": "71b1277b-ab6c-483a-afe2-4484a4a8dacb"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "0c9706f8d65da9e2",
+            "update_time": "2022-10-19T00:30:20.760114",
+            "job_id": "035bbc3c0373f45e",
+            "workflow_step_id": "149e79bc7d4b1a7d",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 2,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "090c9f1c-5898-4a41-b126-8f9675f1bd29"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "8e9020cdba03862b",
+            "update_time": "2022-10-19T00:30:20.806326",
+            "job_id": "920bf488e34b2775",
+            "workflow_step_id": "a78ee57b002e8ed8",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 3,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "6187255a-dcba-4154-bc4e-5346744a6ab6"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "32f1919ef40abb9b",
+            "update_time": "2022-10-19T00:30:20.853111",
+            "job_id": "0f241cd9fe1b2629",
+            "workflow_step_id": "1d1bf0aa6df09130",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 4,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "5dae2dc8-b3de-47a6-be68-19ebfe0c49ba"
+        },
+        {
+            "model_class": "WorkflowInvocationStep",
+            "id": "de0a5f892e9648f9",
+            "update_time": "2022-10-19T00:30:20.873929",
+            "job_id": "3fe009387e35b034",
+            "workflow_step_id": "454a247f53d1895e",
+            "subworkflow_invocation_id": null,
+            "state": "scheduled",
+            "action": null,
+            "order_index": 5,
+            "workflow_step_label": null,
+            "workflow_step_uuid": "8eeb27a8-a0a2-4995-a4f9-5e6e1e8e8379"
+        }
+    ],
+    "inputs": "human-1x-f human-1x-r",
+    "input_step_parameters": {},
+    "outputs": {
+        "Bowtie2 on input dataset(s): alignments": {
+            "src": "hda",
+            "id": "035bbc3c0373f45e",
+            "workflow_step_id": "149e79bc7d4b1a7d"
+        },
+        "Map with BWA-MEM on input dataset(s) (mapped reads in BAM format)": {
+            "src": "hda",
+            "id": "920bf488e34b2775",
+            "workflow_step_id": "a78ee57b002e8ed8"
+        },
+        "HISAT2 on input dataset(s): aligned reads (BAM)": {
+            "src": "hda",
+            "id": "0f241cd9fe1b2629",
+            "workflow_step_id": "1d1bf0aa6df09130"
+        },
+        "Map with minimap2 on input dataset(s) (mapped reads in BAM format)": {
+            "src": "hda",
+            "id": "3fe009387e35b034",
+            "workflow_step_id": "454a247f53d1895e"
+        }
+    },
+    "output_collections": {},
+    "output_values": {},
+    "run": "1",
+    "cloud": "m6i",
+    "job_conf": "16x64",
+    "output_dir": "metrics/TestB-3",
+    "ref_data_size": [],
+    "input_data_size": [
+        558003467,
+        591264254
+    ]
+}

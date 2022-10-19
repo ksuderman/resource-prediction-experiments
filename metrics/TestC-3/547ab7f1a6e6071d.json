@@ -1,0 +1,110 @@
+{
+    "run": "1",
+    "cloud": "m6i",
+    "job_conf": "16x64",
+    "workflow_id": "2e8ca780745052b3",
+    "history_id": "1062ab6f107be30a",
+    "inputs": "human-1x-f human-1x-r",
+    "metrics": {
+        "model_class": "Job",
+        "id": "547ab7f1a6e6071d",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2022-10-19T10:32:02.196409",
+        "create_time": "2022-10-19T10:26:41.117055",
+        "galaxy_version": "22.05",
+        "command_version": "2.17-r941",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.17+galaxy4",
+        "history_id": "1062ab6f107be30a",
+        "params": {
+            "alignment_options": "{\"A\": null, \"B\": null, \"E\": null, \"E2\": null, \"O\": null, \"O2\": null, \"no_end_flt\": \"true\", \"s\": null, \"splicing\": {\"__current_case__\": 0, \"splice_mode\": \"preset\"}, \"z\": null, \"z2\": null}",
+            "fastq_input": "{\"__current_case__\": 1, \"analysis_type_selector\": \"sr\", \"fastq_input1\": {\"values\": [{\"id\": 2, \"src\": \"hda\"}]}, \"fastq_input2\": {\"values\": [{\"id\": 1, \"src\": \"hda\"}]}, \"fastq_input_selector\": \"paired\"}",
+            "indexing_options": "{\"H\": \"false\", \"I\": null, \"k\": null, \"w\": null}",
+            "io_options": "{\"K\": null, \"L\": \"false\", \"Q\": \"false\", \"Y\": \"false\", \"c\": \"false\", \"cs\": null, \"eqx\": \"false\", \"output_format\": \"BAM\"}",
+            "mapping_options": "{\"F\": null, \"N\": null, \"X\": \"false\", \"f\": null, \"g\": null, \"m\": null, \"max_chain_iter\": null, \"max_chain_skip\": null, \"min_occ_floor\": null, \"n\": null, \"p\": null, \"r\": null}",
+            "reference_source": "{\"__current_case__\": 0, \"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\"}",
+            "__workflow_invocation_uuid__": "\"84d2c1744f9811ed9223fa0debe5d68d\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "fastq_input2": {
+                "id": "287b1082d74b6027",
+                "src": "hda",
+                "uuid": "83eb9ece-f927-47b8-b24b-40394f8a3cb2"
+            },
+            "fastq_input1": {
+                "id": "ad2291ab1f73de24",
+                "src": "hda",
+                "uuid": "abef60cc-f81d-4e64-85e5-306d6e34aaf7"
+            }
+        },
+        "outputs": {
+            "alignment_output": {
+                "id": "547ab7f1a6e6071d",
+                "src": "hda",
+                "uuid": "748f5b63-cb8f-4dab-a7dd-4abd816fdee6"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "[M::mm_idx_gen::116.268*0.57] collected minimizers\n[M::mm_idx_gen::118.445*0.85] sorted minimizers\n[M::main::118.445*0.85] loaded/built the index for 455 target sequence(s)\n[M::mm_mapopt_update::118.445*0.85] mid_occ = 1000\n[M::mm_idx_stat] kmer size: 21; skip: 11; is_hpc: 0; #seq: 455\n[M::mm_idx_stat::120.739*0.85] distinct minimizers: 381630162 (93.71% are singletons); average occurrences: 1.335; average spacing: 6.297\n[M::worker_pipeline::125.679*1.36] mapped 333334 sequences\n[M::worker_pipeline::129.172*1.75] mapped 333334 sequences\n[M::worker_pipeline::132.757*2.12] mapped 333334 sequences\n[M::worker_pipeline::136.185*2.46] mapped 333334 sequences\n[M::worker_pipeline::139.490*2.78] mapped 333334 sequences\n[M::worker_pipeline::142.886*3.08] mapped 333334 sequences\n[M::worker_pipeline::146.320*3.38] mapped 333334 sequences\n[M::worker_pipeline::149.706*3.66] mapped 333334 sequences\n[M::worker_pipeline::153.168*3.92] mapped 333334 sequences\n[M::worker_pipeline::156.369*4.17] mapped 333334 sequences\n[M::worker_pipeline::159.646*4.41] mapped 333334 sequences\n[M::worker_pipeline::162.856*4.63] mapped 333334 sequences\n[M::worker_pipeline::166.133*4.85] mapped 333334 sequences\n[M::worker_pipeline::169.499*5.07] mapped 333334 sequences\n[M::worker_pipeline::172.737*5.26] mapped 333334 sequences\n[M::worker_pipeline::175.954*5.46] mapped 333334 sequences\n[M::worker_pipeline::179.269*5.65] mapped 333334 sequences\n[M::worker_pipeline::182.479*5.82] mapped 333334 sequences\n[M::worker_pipeline::185.804*6.00] mapped 333334 sequences\n[M::worker_pipeline::189.446*6.19] mapped 333334 sequences\n[M::worker_pipeline::192.820*6.35] mapped 333334 sequences\n[M::worker_pipeline::196.049*6.50] mapped 333334 sequences\n[M::worker_pipeline::199.394*6.65] mapped 333334 sequences\n[M::worker_pipeline::202.689*6.80] mapped 333334 sequences\n[M::worker_pipeline::205.977*6.94] mapped 333334 sequences\n[M::worker_pipeline::209.426*7.08] mapped 333334 sequences\n[M::worker_pipeline::212.626*7.21] mapped 333334 sequences\n[M::worker_pipeline::215.885*7.34] mapped 333334 sequences\n[M::worker_pipeline::219.225*7.47] mapped 333334 sequences\n[M::worker_pipeline::222.382*7.58] mapped 333334 sequences\n[M::worker_pipeline::225.720*7.70] mapped 333334 sequences\n[M::worker_pipeline::228.869*7.81] mapped 333334 sequences\n[M::worker_pipeline::232.184*7.93] mapped 333334 sequences\n[M::worker_pipeline::235.565*8.03] mapped 333334 sequences\n[M::worker_pipeline::239.584*8.16] mapped 333334 sequences\n[M::worker_pipeline::243.868*8.29] mapped 333334 sequences\n[M::worker_pipeline::248.259*8.42] mapped 333334 sequences\n[M::worker_pipeline::252.507*8.55] mapped 333334 sequences\n[M::worker_pipeline::253.905*8.58] mapped 148214 sequences\n[M::main] Version: 2.17-r941\n[M::main] CMD: minimap2 -x sr -t 16 -a reference.fa /galaxy/server/database/objects/a/b/e/dataset_abef60cc-f81d-4e64-85e5-306d6e34aaf7.dat /galaxy/server/database/objects/8/3/e/dataset_83eb9ece-f927-47b8-b24b-40394f8a3cb2.dat\n[M::main] Real time: 254.201 sec; CPU: 2177.766 sec; Peak RSS: 19.990 GB\n[bam_sort_core] merging from 0 files and 16 in-memory blocks...\n",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "[M::mm_idx_gen::116.268*0.57] collected minimizers\n[M::mm_idx_gen::118.445*0.85] sorted minimizers\n[M::main::118.445*0.85] loaded/built the index for 455 target sequence(s)\n[M::mm_mapopt_update::118.445*0.85] mid_occ = 1000\n[M::mm_idx_stat] kmer size: 21; skip: 11; is_hpc: 0; #seq: 455\n[M::mm_idx_stat::120.739*0.85] distinct minimizers: 381630162 (93.71% are singletons); average occurrences: 1.335; average spacing: 6.297\n[M::worker_pipeline::125.679*1.36] mapped 333334 sequences\n[M::worker_pipeline::129.172*1.75] mapped 333334 sequences\n[M::worker_pipeline::132.757*2.12] mapped 333334 sequences\n[M::worker_pipeline::136.185*2.46] mapped 333334 sequences\n[M::worker_pipeline::139.490*2.78] mapped 333334 sequences\n[M::worker_pipeline::142.886*3.08] mapped 333334 sequences\n[M::worker_pipeline::146.320*3.38] mapped 333334 sequences\n[M::worker_pipeline::149.706*3.66] mapped 333334 sequences\n[M::worker_pipeline::153.168*3.92] mapped 333334 sequences\n[M::worker_pipeline::156.369*4.17] mapped 333334 sequences\n[M::worker_pipeline::159.646*4.41] mapped 333334 sequences\n[M::worker_pipeline::162.856*4.63] mapped 333334 sequences\n[M::worker_pipeline::166.133*4.85] mapped 333334 sequences\n[M::worker_pipeline::169.499*5.07] mapped 333334 sequences\n[M::worker_pipeline::172.737*5.26] mapped 333334 sequences\n[M::worker_pipeline::175.954*5.46] mapped 333334 sequences\n[M::worker_pipeline::179.269*5.65] mapped 333334 sequences\n[M::worker_pipeline::182.479*5.82] mapped 333334 sequences\n[M::worker_pipeline::185.804*6.00] mapped 333334 sequences\n[M::worker_pipeline::189.446*6.19] mapped 333334 sequences\n[M::worker_pipeline::192.820*6.35] mapped 333334 sequences\n[M::worker_pipeline::196.049*6.50] mapped 333334 sequences\n[M::worker_pipeline::199.394*6.65] mapped 333334 sequences\n[M::worker_pipeline::202.689*6.80] mapped 333334 sequences\n[M::worker_pipeline::205.977*6.94] mapped 333334 sequences\n[M::worker_pipeline::209.426*7.08] mapped 333334 sequences\n[M::worker_pipeline::212.626*7.21] mapped 333334 sequences\n[M::worker_pipeline::215.885*7.34] mapped 333334 sequences\n[M::worker_pipeline::219.225*7.47] mapped 333334 sequences\n[M::worker_pipeline::222.382*7.58] mapped 333334 sequences\n[M::worker_pipeline::225.720*7.70] mapped 333334 sequences\n[M::worker_pipeline::228.869*7.81] mapped 333334 sequences\n[M::worker_pipeline::232.184*7.93] mapped 333334 sequences\n[M::worker_pipeline::235.565*8.03] mapped 333334 sequences\n[M::worker_pipeline::239.584*8.16] mapped 333334 sequences\n[M::worker_pipeline::243.868*8.29] mapped 333334 sequences\n[M::worker_pipeline::248.259*8.42] mapped 333334 sequences\n[M::worker_pipeline::252.507*8.55] mapped 333334 sequences\n[M::worker_pipeline::253.905*8.58] mapped 148214 sequences\n[M::main] Version: 2.17-r941\n[M::main] CMD: minimap2 -x sr -t 16 -a reference.fa /galaxy/server/database/objects/a/b/e/dataset_abef60cc-f81d-4e64-85e5-306d6e34aaf7.dat /galaxy/server/database/objects/8/3/e/dataset_83eb9ece-f927-47b8-b24b-40394f8a3cb2.dat\n[M::main] Real time: 254.201 sec; CPU: 2177.766 sec; Peak RSS: 19.990 GB\n[bam_sort_core] merging from 0 files and 16 in-memory blocks...\n",
+        "stdout": "",
+        "job_messages": [],
+        "dependencies": []
+    },
+    "status": {
+        "model_class": "Job",
+        "id": "547ab7f1a6e6071d",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2022-10-19T10:32:02.196409",
+        "create_time": "2022-10-19T10:26:41.117055",
+        "galaxy_version": "22.05",
+        "command_version": "2.17-r941",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/minimap2/minimap2/2.17+galaxy4",
+        "history_id": "1062ab6f107be30a",
+        "params": {
+            "alignment_options": "{\"A\": null, \"B\": null, \"E\": null, \"E2\": null, \"O\": null, \"O2\": null, \"no_end_flt\": \"true\", \"s\": null, \"splicing\": {\"__current_case__\": 0, \"splice_mode\": \"preset\"}, \"z\": null, \"z2\": null}",
+            "fastq_input": "{\"__current_case__\": 1, \"analysis_type_selector\": \"sr\", \"fastq_input1\": {\"values\": [{\"id\": 2, \"src\": \"hda\"}]}, \"fastq_input2\": {\"values\": [{\"id\": 1, \"src\": \"hda\"}]}, \"fastq_input_selector\": \"paired\"}",
+            "indexing_options": "{\"H\": \"false\", \"I\": null, \"k\": null, \"w\": null}",
+            "io_options": "{\"K\": null, \"L\": \"false\", \"Q\": \"false\", \"Y\": \"false\", \"c\": \"false\", \"cs\": null, \"eqx\": \"false\", \"output_format\": \"BAM\"}",
+            "mapping_options": "{\"F\": null, \"N\": null, \"X\": \"false\", \"f\": null, \"g\": null, \"m\": null, \"max_chain_iter\": null, \"max_chain_skip\": null, \"min_occ_floor\": null, \"n\": null, \"p\": null, \"r\": null}",
+            "reference_source": "{\"__current_case__\": 0, \"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\"}",
+            "__workflow_invocation_uuid__": "\"84d2c1744f9811ed9223fa0debe5d68d\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "__input_ext": "\"input\""
+        },
+        "inputs": {
+            "fastq_input2": {
+                "id": "287b1082d74b6027",
+                "src": "hda",
+                "uuid": "83eb9ece-f927-47b8-b24b-40394f8a3cb2"
+            },
+            "fastq_input1": {
+                "id": "ad2291ab1f73de24",
+                "src": "hda",
+                "uuid": "abef60cc-f81d-4e64-85e5-306d6e34aaf7"
+            }
+        },
+        "outputs": {
+            "alignment_output": {
+                "id": "547ab7f1a6e6071d",
+                "src": "hda",
+                "uuid": "748f5b63-cb8f-4dab-a7dd-4abd816fdee6"
+            }
+        },
+        "output_collections": {}
+    },
+    "server": "http://34.206.161.49/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        558003467,
+        591264254
+    ]
+}
