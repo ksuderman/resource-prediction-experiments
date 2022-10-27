@@ -1,5 +1,5 @@
 # Run the simple experiment on four GCP instances with all the job conf files.
-name: TestD-3
+name: TestD-5
 
 # The number of times each benchmark will be executed.
 runs: 1

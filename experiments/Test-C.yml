@@ -14,8 +14,8 @@ benchmark_confs:
 # The cloud instances, as defined in the $HOME/.abm/profile.yml file.
 cloud:
   - m6i
-  - c6i
-  - r6i
+#  - c6i
+#  - r6i
 
 # The Galaxy container_mapper_rules.yml files that defined the CPU and memory
 # resources allocated to tools. List the file names without the .yml extension.

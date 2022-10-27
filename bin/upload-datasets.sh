@@ -4,6 +4,12 @@ set -eu
 while [[ $# > 0 ]] ; do
 	cloud=$1
 	shift
+	# Import the workflows
+	for workflow in hg38 chm13 ; do
+	    id=$(abm $cloud workflow import $workflow | jq -r .id)
+	    abm $cloud workflow rename $id "DNA Mapper $workflow"
+	done
+	
 	history=$(abm $cloud history create "Human DNA" | jq -r .id)
 	echo "Created history $history"
 	for size in 1x 10x 30x ; do
