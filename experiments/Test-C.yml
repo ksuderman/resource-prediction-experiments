@@ -1,5 +1,5 @@
 # Run the simple experiment on four GCP instances with all the job conf files.
-name: TestC-3
+name: TestC-4
 
 # The number of times each benchmark will be executed.
 runs: 1
@@ -14,6 +14,8 @@ benchmark_confs:
 # The cloud instances, as defined in the $HOME/.abm/profile.yml file.
 cloud:
   - m6i
+  - c6i
+  - r6i
 
 # The Galaxy container_mapper_rules.yml files that defined the CPU and memory
 # resources allocated to tools. List the file names without the .yml extension.
