@@ -5,7 +5,7 @@ jobs:
         default_inherits: default
       tools:
         default:
-          cores: 32
+          cores: 24
           mem: 100
           params:
             local_slots: "32"
