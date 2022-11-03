@@ -6,7 +6,7 @@ jobs:
       tools:
         default:
           cores: 32
-          mem: 120
+          mem: 100
           params:
             local_slots: "32"
           scheduling:
@@ -17,9 +17,9 @@ jobs:
         k8s:
           params:
             requests_cpu: "32"
-            requests_memory: "120Gi"
+            requests_memory: "100Gi"
             limits_cpu: "32"
-            limits_memory: "120Gi"
+            limits_memory: "100Gi"
           scheduling:
             accept:
               - docker
